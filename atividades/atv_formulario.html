@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="../index.html"><img src="../img/home.png" alt=""></a>
+    <h1>Formulário</h1>
+    <form action="">
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <div>
+            <label for="nome_usuario">Nome: </label> <!--Insere um rótuolo (Orientação)-->
+            <!--Entrada de dados de tipo texto-->
+            <input type="text" name="nome_usuario" id="nome_usuario" size="50" maxlength="10" minlength="5" placeholder="Digite seu nome" > <!--Size altera o tamanho do campo / maxlength limita o máximo de caracteres para o campo / minlength limita o mínimo de caracteres no capo--> 
+        </div>
+        <div>
+            <label for="endereco">Endereço:</label>
+
+        <input type="endereco" name="endereco" id="endereco">
+        </div>
+        <div>
+            <label for="">Estado</label>
+            <select name="opc" id="opc">
+            <option value="tsi">Mato Grosso</option>
+            <option value="tme">São Paulo</option>
+            <option value="inf">Tocantins</option>
+            <option value="adm">Amazonas</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div>
+            <label for="">Natureza do cargo</label>
+            <br>
+            <input type="radio" name="tipo" id="gerencia" checked> <!-- checked faz com que o item já fique selecionado (não de forma permanente)--> 
+            <label for="gerencia">Gerência</label>
+            <input type="radio" name="tipo" id="financeiro">
+            <label for="financeiro">Financeiro</label>
+            <input type="radio" name="tipo" id="recepcao">
+            <label for="recepcao">Recepção</label>
+            <input type="radio" name="tipo" id="administrativo">
+            <label for="administrativo">Administrativo</label>
+            <input type="radio" name="tipo" id="juridioco">
+            <label for="juridioco">Jurídioco</label>
+        </div>
+        <div>
+            <label for="">Área de Interesse</label>
+            <br>
+            <input type="checkbox" name="Computacao" id="Computacao">
+            <label for="Computacao">Computação</label>
+            <input type="checkbox" name="Cinema" id="Cinema">
+            <label for="Cinema">Biologia</label>
+            <input type="checkbox" name="Leitura" id="Leitura">
+            <label for="Leitura">Meio Ambiente</label>
+            <input type="checkbox" name="x" id="x">
+            <label for="x">Enjenharia</label>
+            <input type="checkbox" name="y" id="y">
+            <label for="y">História</label>
+        </div>
+        <br>
+        <label for="">Escreva um mini currículo: </label>
+        <div>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+    </fieldset>
+        <br>
+        <div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Apagar</button>
+        <!--Duas forma de usar botão-->
+        <!--<input type="submit" value="">
+        <input type="reset" value=""> -->
+        </div>
+
+
+</form>
+</body>
+</html>

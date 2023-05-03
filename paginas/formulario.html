@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="" method="" >
+        <div>
+            <label for="nome_usuario">Nome: </label> <!--Insere um rótuolo (Orientação)-->
+            <!--Entrada de dados de tipo texto-->
+            <input type="text" name="nome_usuario" id="nome_usuario" size="50" maxlength="10" minlength="5" placeholder="Digite seu nome" > <!--Size altera o tamanho do campo / maxlength limita o máximo de caracteres para o campo / minlength limita o mínimo de caracteres no capo--> 
+        </div>
+        <br>   
+        <div>
+            <label for="Senha: ">Senha: </label>
+            <input type="password" name="Senha: " id="Senha: " required >
+        </div>
+        <br>
+        <div>
+            <label for="">Hobbies</label>
+            <br>
+            <input type="checkbox" name="esportes" id="esportes">
+            <label for="esportes">Esportes</label>
+            <input type="checkbox" name="Cinema" id="Cinema">
+            <label for="Cinema">Cinema</label>
+            <input type="checkbox" name="Leitura" id="Leitura">
+            <label for="Leitura">Leitura</label>
+        </div>
+        <br>
+        <div>
+            <label for="">Escolha o Tipo</label>
+            <br>
+            <input type="radio" name="tipo" id="adulto" checked> <!-- checked faz com que o item já fique selecionado (não de forma permanente)--> 
+            <label for="adulto">Adulto</label>
+            <input type="radio" name="tipo" id="adolescente">
+            <label for="adolescente">Adolescente</label>
+            <input type="radio" name="tipo" id="criança">
+            <label for="criança">Criança</label>
+        </div>
+        <br>
+        <div>
+            <label for="arquivo">Escolha um arquivo: </label>
+            <input type="file" name="arquivo" id="arquivo"
+            accept="image/png, image/jpeg">         
+        </div>
+        <br>
+        <div>
+            <label for="">Escolha um opção</label>
+            <select name="opc" id="opc">
+            <option value="tsi">TSI</option>
+            <option value="tme">TME</option>
+            <option value="inf">Informática</option>
+            <option value="adm">Administração</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Deixe seu recado" ></textarea>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Apagar</button>
+            <!--Duas forma de usar botão-->
+            <!--<input type="submit" value="">
+            <input type="reset" value=""> -->
+        </div>
+</form>
+
+
+
+</body>
+</html>
