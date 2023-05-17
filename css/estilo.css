@@ -1,0 +1,12 @@
+div {
+    background-color: DeepSkyBlue; /*Altera a cor de fundo*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+
+div li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+}
+h1, h2 {
+    font-size: 50px;
+}
