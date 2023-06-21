@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section {
+        width: 90%;
+        background-color: cadetblue;
+        border-radius: 20px ;
+        margin: 20px auto;
+        padding: 20px;
+}
+img { 
+    position: absolute;
+    top: 100px;
+    left: 70%;
+}
