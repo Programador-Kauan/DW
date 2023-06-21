@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/atv.css">
+    <title>CSS:static, fixed, sticky, relative e absolute</title>
+</head>
+<body>
+    
+    <div class="txt" >
+        <h2>Teorema do macaco infinito: </h2>
+    </div>
+    <div class="txt" >
+        <p>O teorema propõe que se infinitos macacos digitam ao acaso em máquinas de escrever, produzirão todas as obras da literatura. De forma análoga, para um número suficientemente grande de macacos se movendo de forma aleatória em um cenário do jogo, se ele tiver solução, é improvável que nenhum macaco a encontre.</p>
+        <p>Prova Direta
+            Há uma prova direta desse teorema. Se dois eventos são estatisticamente independentes (isto é, um não afeta o resultado do outro), então a probabilidade de que ambos aconteçam é igual ao produto das probabilidades de que cada um aconteça independentemente. Exemplo: se a chance de chover em Sydney num certo dia é de 0,3 e a chance de um terremoto ocorrer em São Francisco é de 0,008, então a chance de que os dois aconteçam ao mesmo tempo é de 0.3 × 0.008 = 0.0024.
+            
+            Suponha que uma máquina de escrever tenha 50 teclas, e a palavra a ser escrita seja "banana". Teclando-se aleatoriamente, a chance de a primeira letra teclada ser b é 1/50, e a chance de a segunda ser a é também 1/50, e assim por diante, porque os eventos são independentes. Então a chance de as seis letras formarem banana é
+            
+            (1/50) × (1/50) × (1/50) × (1/50) × (1/50) × (1/50) = (1/50)6. Ou seja, 1 em 15625000000 (uma em quinze bilhões e seiscentos e vinte e cinco milhões).
+            Pela mesma razão, a chance de que as 6 próximas letras formem banana é também (1/50)6, e assim por diante.
+            
+            Disto, a chance de não ser escrito banana num dado bloco de 6 letras é 1 − (1/50)6. Como cada bloco é feito independentemente, a chance Xn de não ser escrito banana em qualquer dos primeiros n blocos de 6 letras é
+            
+            {\displaystyle X_{n}=\left(1-{\frac {1}{50^{6}}}\right)^{n}.}{\displaystyle X_{n}=\left(1-{\frac {1}{50^{6}}}\right)^{n}.}
+            Quando n aumenta, Xn diminui. Para um n de um milhão, Xn é 99.99%, mas para um n de 10 bilhões Xn é 53% e para um n de 100 bilhões é 0.17%. Quando n se aproxima do infinito, a probabilidade Xn se aproxima de zero; isto é, tendo-se um n grande o suficiente, Xn pode ser tão pequeno quanto se deseje.[1][2]
+            
+            O mesmo argumento mostra por que pelo menos um dos infinitamente muitos macacos irá (quase certamente) produzir um texto tão rapidamente quanto o seria por um digitador humano perfeitamente sem erros copiando do original. Nesse caso Xn = (1 − (1/50)6)n onde Xn representa a probabilidade de nenhum dos primeiros n macacos escrever banana corretamente na primeira tentativa. Quando consideramos 100 bilhões de macacos, a probabilidade cai para 0.17%, e aumentando-se o número de macacos n ao infinito o valor de Xn — a probabilidade de os macacos não reproduzirem o texto dado — cai para zero. Isso equivale a afirmar que a probabilidade de um ou mais de infinitos de macacos produzirá um texto dado na primeira tentativa é de 100%, ou que é quase certo que fará.
+            
+            Cadeias infinitas
+            As duas afirmações acima podem ser explicadas mais geral e compactamente em termos de cadeias, que são sequências de caracteres escolhidos de algum alfabeto finito:
+            
+            Dada uma cadeia infinita onde cada caractere é escolhido uniforme e aleatoriamente, qualquer cadeia finita dada quase certamente ocorre como uma subcadeia em alguma posição (e, de fato, infinitas posições).
+            Dada uma sequência infinita de cadeias infinitas, onde cada caractere de cada cadeia é escolhido uniforme e aleatoriamente, qualquer cadeia finita quase certamente ocorre como um prefixo de uma dessas cadeias (e, de fato, como um prefixo de infinitamente muitas dessas cadeias na sequência).
+            Ambos são deduzidos facilmente do segundo Lema de Borel-Cantelli. Para o segundo teorema, seja Ek o evento no qual a k-ésima cadeia começa com o texto dado. Por ter uma probabilidade fixa diferente de zero p de ocorrer, Ek é independente, e a soma abaixo diverge,
+            
+            {\displaystyle \sum _{i=1}^{\infty }P(E_{k})=\sum _{i=1}^{\infty }p=\infty ,}{\displaystyle \sum _{i=1}^{\infty }P(E_{k})=\sum _{i=1}^{\infty }p=\infty ,}
+            a probabilidade de infinitamente muitos dos Ek ocorrerem é 1. O primeiro teorema é demonstrado de forma similar; pode-se dividir a cadeia aleatória pelos blocos não sobrepostos que correspondem ao texto desejado, e fazer Ek o evento onde o k-ésimo bloco é igual à cadeia desejada.[3]
+            
+            Probabilidades
+            Ignorando pontuação, espaçamento e diferença entre maiúsculas e minúsculas, um macaco escrevendo letras de maneira uniforme e aleatória tem uma chance em 26 de digitar corretamente a primeira letra de Hamlet. Ele tem uma chance em 676 (26 × 26) de digitar as primeiras duas letras. Devido ao fato da probabilidade encolher exponencialmente, para 20 letras já se terá apenas uma chance em 2620 = 19.928.148.895.209.409.152.340.197.376, equivalente à probabilidade de se comprar 4 bilhetes de loteria consecutivamente e ganhar o prêmio principal de cada vez.</p>
+    </div>
+    <div class="img" >
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Monkey-typing.jpg" alt="Imagem de um macaco em uma máquina de escrever, ilustrando a teoria." height="" width="" >
+    </div>
+
+
+</body>
+</html>

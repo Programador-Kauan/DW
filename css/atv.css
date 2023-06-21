@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /*Resetar configuração padrão de todos os elementos da página (Fazer em toda página CSS)*/
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.img {
+    width: 550px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    right: 5%;
+    bottom: 0%;  
+
+}   
+
+.txt {
+    width: 500px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    position: static;
+    right: 5%;
+    bottom: 0%;  
+}
